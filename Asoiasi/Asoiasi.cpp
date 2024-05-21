@@ -7,6 +7,7 @@ using namespace std;
 class dokter;
 class pasien
 {				//asosiasi
+public:
 	string nama;
 	vector<dokter*> daftar_dokter;
 	pasien(string pNama) :nama(pNama)
@@ -21,6 +22,26 @@ class pasien
 
 	void tambahDokter(dokter*);
 	void cetakDokter();
+};
+
+class dokter
+{
+public:
+	string nama;
+	vector<pasien*> daftar_pasien;
+
+	dokter(string pNama) :nama(pNama)
+	{
+		cout << "dokter \"" << nama << "\" ada\n";
+	}
+
+	~dokter()
+	{
+		cout << "dokter \"" << nama << "\" tidak ada\n";
+	}
+
+	void tambahPasien();
+	void cetakPasien();
 };
 
 int main()
