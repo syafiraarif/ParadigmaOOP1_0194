@@ -3,5 +3,15 @@
 
 class Jantung
 {
+public:
+	Jantung()
+	{
+		cout << "jantung dihidupkan\n";
+	}
 
+	~Jantung()
+	{
+		cout << "jantung dihidupkan\n";
+	}
 };
+#endif
