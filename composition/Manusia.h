@@ -6,7 +6,7 @@ class Manusia
 {
 public:
 	string name;
-	jantung varJantung;
+	Jantung varJantung;
 
 	Manusia( string pName): name(pName)
 	{
