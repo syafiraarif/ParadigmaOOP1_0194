@@ -5,7 +5,7 @@ class Ibu
 {
 public:
 	string nama;
-	vector<anak*> daftar_anak;
+	vector<Anak*> daftar_anak;
 
 	Ibu(string pNama): nama(pNama)
 	{
@@ -17,13 +17,13 @@ public:
 		cout << "Ibu\"" << nama << "\" tidak ada\n";
 	}
 
-	void tambahAnak(anak*);
+	void tambahAnak(Anak*);
 	void cetakAnak();
 };
 
-void Ibu::tambahAnak(anak*pAnak)
+void Ibu::tambahAnak(Anak*pAnak)
 {
-	daftar_anak.push_bsck(pAnak);
+	daftar_anak.push_back(pAnak);
 }
 
 void Ibu::cetakAnak()
